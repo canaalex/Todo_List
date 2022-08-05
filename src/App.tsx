@@ -2,6 +2,7 @@ import "./App.css";
 import TodoList from "./TodoList";
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
+import Button from "./components/button/Button";
 
 
 interface Itask{
@@ -45,6 +46,7 @@ function App() {
       return [...prevTodos,{ id: uuidv4(), name: name, complete: false }];
     });
     setName("");
+    console.log('click');
     
     // todoNameRef.current= null;
   }
@@ -56,9 +58,9 @@ function App() {
   return (
     <>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input  value={name} type="text"  onChange={(e)=>{setName(e.target.value)}}/>
-      <button onClick={handleAddTodo}>Add Todo</button>
-      <button onClick={handleClearTodos}>Clear complete</button>
+      <input title="check" value={name} type="text" onChange={(e)=>{setName(e.target.value)}}/>
+      <Button label="Add Todo" handleClick={handleAddTodo} />
+      <Button label="Clear complete" handleClick={handleClearTodos}/>
       <div>{todos.filter((todo) => !todo.complete).length} left to do</div>
     </>
   );
