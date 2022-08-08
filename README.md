@@ -1,3 +1,9 @@
+# Todo_List
+
+
+A user can add their tasks in the TodoList. Ticking the checkboxes and deleting the tasks when completed are also available.
+![Screenshot from 2022-08-08 12-30-35](https://user-images.githubusercontent.com/62827365/183358753-f9409aa6-6aea-4cc7-9081-b9f443825b7e.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,6 +74,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Todo_List
-
-A user can add their tasks in the TodoList. Ticking the checkboxes and deleting the tasks when completed are also available.
